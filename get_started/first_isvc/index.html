@@ -10,11 +10,10 @@
       
       
       
-      
-        <link rel="canonical" href="https://kserve.io/docs/get_started/first_isvc/">
+        <link rel="canonical" href="https://kserve.io/website/get_started/first_isvc/">
       
       <link rel="icon" href="../../images/favicon/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
       
@@ -22,28 +21,30 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
-    
     
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+
     
     
   </head>
@@ -57,7 +58,6 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,13 +72,12 @@
     </div>
     <div data-md-component="announce">
       
-        <aside class="md-announce">
-          <div class="md-announce__inner md-grid md-typeset">
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
             
  <h1>
 
- In Construction | <b>KServe v0.7 is Released</b>, <a href="/website/blog/articles/2021-10-11-KServe-0.7-release/">Read blog &gt;&gt;</a>
-    
+    <a href="http://kserve-survey.com/"><b>KServe User Survey</b></a>
  </h1>
 
           </div>
@@ -86,7 +85,18 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="KServe Documentation Website" class="md-header__button md-logo" aria-label="KServe Documentation Website" data-md-component="logo">
       
@@ -94,7 +104,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,21 +126,24 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -147,11 +160,10 @@
     
     
       <div class="md-header__source">
-        
-<a href="https://github.com/kserve/website/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/kserve/website" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -160,13 +172,9 @@
       </div>
     
   </nav>
-</header>
+  
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -300,7 +308,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../blog/articles/2021-10-11-KServe-0.7-release/" class="md-tabs__link">
+      <a href="../../blog/articles/2022-02-18-KServe-0.8-release/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -328,6 +336,13 @@
     </ul>
   </div>
 </nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -354,11 +369,10 @@
   </label>
   
     <div class="md-nav__source">
-      
-<a href="https://github.com/kserve/website/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/kserve/website" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -398,10 +412,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
-      <label class="md-nav__link" for="__nav_2">
-        Getting started
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Getting started" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -410,6 +428,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -420,8 +439,10 @@
     </li>
   
 
+            
           
             
+              
   
   
     
@@ -443,6 +464,7 @@
       </a>
       
         
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -463,36 +485,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-create-test-inferenceservice" class="md-nav__link">
-    1. Create test InferenceService
+  <a href="#1-create-a-namespace" class="md-nav__link">
+    1. Create a namespace
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-check-inferenceservice-status" class="md-nav__link">
-    2. Check InferenceService status.
+  <a href="#2-create-an-inferenceservice" class="md-nav__link">
+    2. Create an InferenceService
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-determine-the-ingress-ip-and-ports" class="md-nav__link">
-    3. Determine the ingress IP and ports
+  <a href="#3-check-inferenceservice-status" class="md-nav__link">
+    3. Check InferenceService status.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-curl-the-inferenceservice" class="md-nav__link">
-    4. Curl the InferenceService
+  <a href="#4-determine-the-ingress-ip-and-ports" class="md-nav__link">
+    4. Determine the ingress IP and ports
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-run-performance-test" class="md-nav__link">
-    5. Run Performance Test
+  <a href="#5-perform-inference" class="md-nav__link">
+    5. Perform inference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-run-performance-test-optional" class="md-nav__link">
+    6. Run performance test (optional)
   </a>
   
 </li>
@@ -509,6 +538,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -529,10 +559,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
-      <label class="md-nav__link" for="__nav_3">
-        Administration Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Administration Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Administration Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -541,6 +575,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -550,10 +585,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
-      <label class="md-nav__link" for="__nav_3_1">
-        Install KServe
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          Install KServe
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Install KServe" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
@@ -562,6 +601,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -572,20 +612,10 @@
     </li>
   
 
+            
           
             
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../admin/kubernetes_deployment/" class="md-nav__link">
-        Kubernetes deployment installation
-      </a>
-    </li>
-  
-
-          
-            
+              
   
   
   
@@ -596,8 +626,24 @@
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/kubernetes_deployment/" class="md-nav__link">
+        Kubernetes deployment installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -608,12 +654,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -634,10 +682,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
-      <label class="md-nav__link" for="__nav_4">
-        User Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="User Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -646,6 +698,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -655,10 +708,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
       
-      <label class="md-nav__link" for="__nav_4_1">
-        Concepts
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          Concepts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Concepts" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
@@ -667,6 +724,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -676,10 +734,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_1" type="checkbox" id="__nav_4_1_1" >
       
-      <label class="md-nav__link" for="__nav_4_1_1">
-        Control Plane
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1_1">
+          Control Plane
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Control Plane" data-md-level="3">
         <label class="md-nav__title" for="__nav_4_1_1">
           <span class="md-nav__icon md-icon"></span>
@@ -688,6 +750,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -698,14 +761,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -715,10 +781,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" >
       
-      <label class="md-nav__link" for="__nav_4_1_2">
-        Data Plane
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1_2">
+          Data Plane
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Data Plane" data-md-level="3">
         <label class="md-nav__title" for="__nav_4_1_2">
           <span class="md-nav__icon md-icon"></span>
@@ -727,6 +797,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -737,8 +808,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -749,20 +822,38 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
-          
-        </ul>
-      </nav>
-    </li>
-  
-
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/servingruntimes/" class="md-nav__link">
+        Serving Runtimes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -772,10 +863,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
       
-      <label class="md-nav__link" for="__nav_4_2">
-        Single Model Serving
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Single Model Serving
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Single Model Serving" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
@@ -784,6 +879,33 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_1" type="checkbox" id="__nav_4_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_1">
+          Supported Model Frameworks/Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Supported Model Frameworks/Formats" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Supported Model Frameworks/Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
   
   
   
@@ -794,8 +916,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -806,8 +930,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -818,8 +944,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -830,8 +958,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -842,8 +972,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -854,20 +986,24 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../modelserving/v1beta1/spark/" class="md-nav__link">
-        Spark
+        Spark MLlib
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -878,32 +1014,125 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../modelserving/v1beta1/paddle/" class="md-nav__link">
-        PaddleServer
+        Paddle
       </a>
     </li>
   
 
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
           
             
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_2" type="checkbox" id="__nav_4_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_2">
+          Multi-Framework Serving Runtimes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Multi-Framework Serving Runtimes" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Multi-Framework Serving Runtimes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_2_1" type="checkbox" id="__nav_4_2_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_2_1">
+          Nvidia Triton
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Nvidia Triton" data-md-level="4">
+        <label class="md-nav__title" for="__nav_4_2_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Nvidia Triton
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
   
   
   
     <li class="md-nav__item">
       <a href="../../modelserving/v1beta1/triton/torchscript/" class="md-nav__link">
-        Triton
+        Torchscript
       </a>
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/v1beta1/triton/bert/" class="md-nav__link">
+        Tensorflow
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -914,14 +1143,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -931,10 +1163,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
       
-      <label class="md-nav__link" for="__nav_4_3">
-        Multi Model Serving
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3">
+          Multi Model Serving
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Multi Model Serving" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_3">
           <span class="md-nav__icon md-icon"></span>
@@ -943,6 +1179,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -952,10 +1189,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_1" type="checkbox" id="__nav_4_3_1" >
       
-      <label class="md-nav__link" for="__nav_4_3_1">
-        Overview
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_3_1">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Overview" data-md-level="3">
         <label class="md-nav__title" for="__nav_4_3_1">
           <span class="md-nav__icon md-icon"></span>
@@ -964,6 +1205,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -974,8 +1216,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -986,20 +1230,24 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1009,10 +1257,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
       
-      <label class="md-nav__link" for="__nav_4_4">
-        Transformers
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_4">
+          Transformers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Transformers" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_4">
           <span class="md-nav__icon md-icon"></span>
@@ -1021,6 +1273,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1031,8 +1284,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1043,14 +1298,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1060,18 +1318,23 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
-      <label class="md-nav__link" for="__nav_4_5">
-        Storage
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Storage" data-md-level="2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5">
+          Model Storage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Model Storage" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
-          Storage
+          Model Storage
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1082,8 +1345,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1094,8 +1359,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1106,8 +1373,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1118,14 +1387,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1135,10 +1407,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
-      <label class="md-nav__link" for="__nav_4_6">
-        Model Explainability
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
+          Model Explainability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Model Explainability" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1147,6 +1423,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1157,8 +1434,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1168,10 +1447,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6_2" type="checkbox" id="__nav_4_6_2" >
       
-      <label class="md-nav__link" for="__nav_4_6_2">
-        Alibi Explainer
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6_2">
+          Alibi Explainer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Alibi Explainer" data-md-level="3">
         <label class="md-nav__title" for="__nav_4_6_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1180,6 +1463,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1190,8 +1474,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1202,8 +1488,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1214,14 +1502,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1232,14 +1523,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1249,10 +1543,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
-      <label class="md-nav__link" for="__nav_4_7">
-        Model Monitoring
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_7">
+          Model Monitoring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Model Monitoring" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1261,6 +1559,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1271,8 +1570,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1283,8 +1584,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1295,14 +1598,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1312,10 +1618,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
       
-      <label class="md-nav__link" for="__nav_4_8">
-        Request Batching
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8">
+          Request Batching
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Request Batching" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1324,6 +1634,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1334,14 +1645,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1351,10 +1665,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
       
-      <label class="md-nav__link" for="__nav_4_9">
-        Payload Logging
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_9">
+          Payload Logging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Payload Logging" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_9">
           <span class="md-nav__icon md-icon"></span>
@@ -1363,6 +1681,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1373,14 +1692,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1390,10 +1712,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
-      <label class="md-nav__link" for="__nav_4_10">
-        Autoscaling
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_10">
+          Autoscaling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Autoscaling" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
@@ -1402,6 +1728,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1412,14 +1739,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1429,18 +1759,84 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
-      <label class="md-nav__link" for="__nav_4_11">
-        Kafka
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Kafka" data-md-level="2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_11">
+          Node Scheduling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Node Scheduling" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_11">
+          <span class="md-nav__icon md-icon"></span>
+          Node Scheduling
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/nodescheduling/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/nodescheduling/inferenceservicenodescheduling/" class="md-nav__link">
+        InferenceService Node Scheduling
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_12">
+          Kafka
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Kafka" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_12">
           <span class="md-nav__icon md-icon"></span>
           Kafka
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1451,12 +1847,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1477,10 +1875,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="__nav_5">
-        API Reference
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          API Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="API Reference" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
@@ -1489,6 +1891,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1499,8 +1902,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1511,6 +1916,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1531,10 +1937,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_6">
-        Developer Guide
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Developer Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Developer Guide" data-md-level="1">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
@@ -1543,6 +1953,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1553,8 +1964,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1565,6 +1978,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1585,10 +1999,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_7">
-        Blog
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Blog" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
@@ -1597,6 +2015,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1606,10 +2025,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" >
       
-      <label class="md-nav__link" for="__nav_7_1">
-        Releases
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_1">
+          Releases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
         <label class="md-nav__title" for="__nav_7_1">
           <span class="md-nav__icon md-icon"></span>
@@ -1618,6 +2041,21 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/articles/2022-02-18-KServe-0.8-release/" class="md-nav__link">
+        KServe 0.8 Release
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
   
@@ -1628,14 +2066,17 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1645,10 +2086,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" >
       
-      <label class="md-nav__link" for="__nav_7_2">
-        Articles
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_2">
+          Articles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Articles" data-md-level="2">
         <label class="md-nav__title" for="__nav_7_2">
           <span class="md-nav__icon md-icon"></span>
@@ -1657,6 +2102,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1667,12 +2113,14 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1693,10 +2141,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_8">
-        Community
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Community
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Community" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
@@ -1705,6 +2157,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -1715,8 +2168,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -1727,6 +2182,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -1746,6 +2202,7 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -1766,36 +2223,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-create-test-inferenceservice" class="md-nav__link">
-    1. Create test InferenceService
+  <a href="#1-create-a-namespace" class="md-nav__link">
+    1. Create a namespace
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-check-inferenceservice-status" class="md-nav__link">
-    2. Check InferenceService status.
+  <a href="#2-create-an-inferenceservice" class="md-nav__link">
+    2. Create an InferenceService
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-determine-the-ingress-ip-and-ports" class="md-nav__link">
-    3. Determine the ingress IP and ports
+  <a href="#3-check-inferenceservice-status" class="md-nav__link">
+    3. Check InferenceService status.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-curl-the-inferenceservice" class="md-nav__link">
-    4. Curl the InferenceService
+  <a href="#4-determine-the-ingress-ip-and-ports" class="md-nav__link">
+    4. Determine the ingress IP and ports
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-run-performance-test" class="md-nav__link">
-    5. Run Performance Test
+  <a href="#5-perform-inference" class="md-nav__link">
+    5. Perform inference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-run-performance-test-optional" class="md-nav__link">
+    6. Run performance test (optional)
   </a>
   
 </li>
@@ -1817,55 +2281,82 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kserve/website/edit/mkdocs/docs/get_started/first_isvc.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  <h1>First InferenceService</h1>
-                
-                <h2 id="run-your-first-inferenceservice">Run your first <code>InferenceService</code><a class="headerlink" href="#run-your-first-inferenceservice" title="Permanent link">&para;</a></h2>
-<p><strong>In this tutorial, you will deploy a ScikitLearn InferenceService.</strong></p>
-<p>This inference service loads a simple iris ML model, send a list of attributes and print the prediction for the class of iris plant."</p>
-<p>Since your model is being deployed as an InferenceService, not a raw Kubernetes Service, you just need to provide the trained model and
+  <a href="https://github.com/kserve/website/edit/mkdocs/docs/get_started/first_isvc.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+  <h1>First InferenceService</h1>
+
+<h2 id="run-your-first-inferenceservice">Run your first InferenceService<a class="headerlink" href="#run-your-first-inferenceservice" title="Permanent link">&para;</a></h2>
+<p>In this tutorial, you will deploy an InferenceService with a predictor that will load a scikit-learn model trained with
+the <a href="https://archive.ics.uci.edu/ml/datasets/iris">iris</a> dataset. This dataset has three output class: Iris Setosa, Iris Versicolour, and Iris Virginica.</p>
+<p>You will then send an inference request to your deployed model in order to get a prediction for the class of iris plant your request corresponds to.</p>
+<p>Since your model is being deployed as an InferenceService, not a raw Kubernetes Service, you just need to provide the storage location of the model and
 it gets some <strong>super powers out of the box</strong> <img alt="🚀" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f680.svg" title=":rocket:" />.</p>
-<h3 id="1-create-test-inferenceservice">1. Create test <code>InferenceService</code><a class="headerlink" href="#1-create-test-inferenceservice" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">YAML</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>apiVersion: <span class="s2">&quot;serving.kserve.io/v1beta1&quot;</span>
-kind: <span class="s2">&quot;InferenceService&quot;</span>
-metadata:
-  name: <span class="s2">&quot;sklearn-iris&quot;</span>
-spec:
-  predictor:
-    sklearn:
-      storageUri: <span class="s2">&quot;gs://kfserving-samples/models/sklearn/iris&quot;</span>
+<h3 id="1-create-a-namespace">1. Create a namespace<a class="headerlink" href="#1-create-a-namespace" title="Permanent link">&para;</a></h3>
+<p>First, create a namespace to use for deploying KServe resources:</p>
+<div class="highlight"><pre><span></span><code>kubectl create namespace kserve-test
+</code></pre></div>
+<h3 id="2-create-an-inferenceservice">2. Create an <code>InferenceService</code><a class="headerlink" href="#2-create-an-inferenceservice" title="Permanent link">&para;</a></h3>
+<p>Next, define a new InferenceService YAML for the model and apply it to the cluster.</p>
+<p>A new predictor schema was introduced in <code>v0.8.0</code>. New <code>InferenceServices</code> should be deployed using the new schema. The old schema
+is provided as reference.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">New Schema</label><label for="__tabbed_1_2">Old Schema</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>kubectl apply -n kserve-test -f - <span class="s">&lt;&lt;EOF</span>
+<span class="s">apiVersion: &quot;serving.kserve.io/v1beta1&quot;</span>
+<span class="s">kind: &quot;InferenceService&quot;</span>
+<span class="s">metadata:</span>
+<span class="s">  name: &quot;sklearn-iris&quot;</span>
+<span class="s">spec:</span>
+<span class="s">  predictor:</span>
+<span class="s">    model:</span>
+<span class="s">      modelFormat:</span>
+<span class="s">        name: sklearn</span>
+<span class="s">      storageUri: &quot;gs://kfserving-examples/models/sklearn/1.0/model&quot;</span>
+<span class="s">EOF</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>kubectl apply -n kserve-test -f - <span class="s">&lt;&lt;EOF</span>
+<span class="s">apiVersion: &quot;serving.kserve.io/v1beta1&quot;</span>
+<span class="s">kind: &quot;InferenceService&quot;</span>
+<span class="s">metadata:</span>
+<span class="s">  name: &quot;sklearn-iris&quot;</span>
+<span class="s">spec:</span>
+<span class="s">  predictor:</span>
+<span class="s">    sklearn:</span>
+<span class="s">      storageUri: &quot;gs://kfserving-examples/models/sklearn/1.0/model&quot;</span>
+<span class="s">EOF</span>
 </code></pre></div>
 </div>
 </div>
-<p>Once you've created your YAML file (named something like "sklearn.yaml"):
-<div class="highlight"><pre><span></span><code>kubectl create namespace kserve-test
-kubectl apply -f sklearn.yaml -n kserve-test
-</code></pre></div></p>
-<h3 id="2-check-inferenceservice-status">2. Check <code>InferenceService</code> status.<a class="headerlink" href="#2-check-inferenceservice-status" title="Permanent link">&para;</a></h3>
+</div>
+<h3 id="3-check-inferenceservice-status">3. Check <code>InferenceService</code> status.<a class="headerlink" href="#3-check-inferenceservice-status" title="Permanent link">&para;</a></h3>
 <p><div class="highlight"><pre><span></span><code>kubectl get inferenceservices sklearn-iris -n kserve-test
 NAME           URL                                                 READY   PREV   LATEST   PREVROLLEDOUTREVISION   LATESTREADYREVISION                    AGE
 sklearn-iris   http://sklearn-iris.kserve-test.example.com         True           <span class="m">100</span>                              sklearn-iris-predictor-default-47q2g   7d23h
 </code></pre></div>
 If your DNS contains example.com please consult your admin for configuring DNS or using <a href="https://knative.dev/docs/serving/using-a-custom-domain">custom domain</a>.</p>
-<h3 id="3-determine-the-ingress-ip-and-ports">3. Determine the ingress IP and ports<a class="headerlink" href="#3-determine-the-ingress-ip-and-ports" title="Permanent link">&para;</a></h3>
+<h3 id="4-determine-the-ingress-ip-and-ports">4. Determine the ingress IP and ports<a class="headerlink" href="#4-determine-the-ingress-ip-and-ports" title="Permanent link">&para;</a></h3>
 <p>Execute the following command to determine if your kubernetes cluster is running in an environment that supports external load balancers
 <div class="highlight"><pre><span></span><code>$ kubectl get svc istio-ingressgateway -n istio-system
 NAME                   TYPE           CLUSTER-IP       EXTERNAL-IP      PORT<span class="o">(</span>S<span class="o">)</span>   AGE
 istio-ingressgateway   LoadBalancer   <span class="m">172</span>.21.109.129   <span class="m">130</span>.211.10.121   ...       17h
 </code></pre></div></p>
-<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Load Balancer</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Load Balancer</label><label for="__tabbed_2_2">Node Port</label><label for="__tabbed_2_3">Port Forward</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>If the EXTERNAL-IP value is set, your environment has an external load balancer that you can use for the ingress gateway.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">INGRESS_HOST</span><span class="o">=</span><span class="k">$(</span>kubectl -n istio-system get service istio-ingressgateway -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.loadBalancer.ingress[0].ip}&#39;</span><span class="k">)</span>
 <span class="nb">export</span> <span class="nv">INGRESS_PORT</span><span class="o">=</span><span class="k">$(</span>kubectl -n istio-system get service istio-ingressgateway -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.spec.ports[?(@.name==&quot;http2&quot;)].port}&#39;</span><span class="k">)</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Node Port</label><div class="tabbed-content">
-<p>If the EXTERNAL-IP value is none (or perpetually pending), your environment does not provide an external load balancer for the ingress gateway. 
+<div class="tabbed-block">
+<p>If the EXTERNAL-IP value is none (or perpetually pending), your environment does not provide an external load balancer for the ingress gateway.
 In this case, you can access the gateway using the service’s node port.
 <div class="highlight"><pre><span></span><code><span class="c1"># GKE</span>
 <span class="nb">export</span> <span class="nv">INGRESS_HOST</span><span class="o">=</span>worker-node-address
@@ -1876,7 +2367,7 @@ In this case, you can access the gateway using the service’s node port.
 <span class="nb">export</span> <span class="nv">INGRESS_PORT</span><span class="o">=</span><span class="k">$(</span>kubectl -n istio-system get service istio-ingressgateway -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.spec.ports[?(@.name==&quot;http2&quot;)].nodePort}&#39;</span><span class="k">)</span>
 </code></pre></div></p>
 </div>
-<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Port Forward</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>Alternatively you can do <code>Port Forward</code> for testing purpose
 <div class="highlight"><pre><span></span><code><span class="nv">INGRESS_GATEWAY_SERVICE</span><span class="o">=</span><span class="k">$(</span>kubectl get svc --namespace istio-system --selector<span class="o">=</span><span class="s2">&quot;app=istio-ingressgateway&quot;</span> --output <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[0].metadata.name}&#39;</span><span class="k">)</span>
 kubectl port-forward --namespace istio-system svc/<span class="si">${</span><span class="nv">INGRESS_GATEWAY_SERVICE</span><span class="si">}</span> <span class="m">8080</span>:80
@@ -1886,23 +2377,28 @@ kubectl port-forward --namespace istio-system svc/<span class="si">${</span><spa
 </code></pre></div></p>
 </div>
 </div>
-<h3 id="4-curl-the-inferenceservice">4. Curl the <code>InferenceService</code><a class="headerlink" href="#4-curl-the-inferenceservice" title="Permanent link">&para;</a></h3>
-<p>First prepare your inference input request
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;instances&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">[</span><span class="mf">6.8</span><span class="p">,</span>  <span class="mf">2.8</span><span class="p">,</span>  <span class="mf">4.8</span><span class="p">,</span>  <span class="mf">1.4</span><span class="p">],</span>
-    <span class="p">[</span><span class="mf">6.0</span><span class="p">,</span>  <span class="mf">3.4</span><span class="p">,</span>  <span class="mf">4.5</span><span class="p">,</span>  <span class="mf">1.6</span><span class="p">]</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+</div>
+<h3 id="5-perform-inference">5. Perform inference<a class="headerlink" href="#5-perform-inference" title="Permanent link">&para;</a></h3>
+<p>First, prepare your inference input request inside a file:</p>
+<div class="highlight"><pre><span></span><code>cat <span class="s">&lt;&lt;EOF &gt; &quot;./iris-input.json&quot;</span>
+<span class="s">{</span>
+<span class="s">  &quot;instances&quot;: [</span>
+<span class="s">    [6.8,  2.8,  4.8,  1.4],</span>
+<span class="s">    [6.0,  3.4,  4.5,  1.6]</span>
+<span class="s">  ]</span>
+<span class="s">}</span>
+<span class="s">EOF</span>
 </code></pre></div>
-Once you've created your json test input file (named something like "iris-input.json"):</p>
-<div class="tabbed-set" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Real DNS</label><div class="tabbed-content">
+<p>Depending on your setup, use one of the following commands to curl the <code>InferenceService</code>:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Real DNS</label><label for="__tabbed_3_2">Magic DNS</label><label for="__tabbed_3_3">From Ingress gateway with HOST Header</label><label for="__tabbed_3_4">From local cluster gateway</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>If you have configured the DNS, you can directly curl the <code>InferenceService</code> with the URL obtained from the status print.
 e.g
 <div class="highlight"><pre><span></span><code>curl -v http://sklearn-iris.kserve-test.${CUSTOM_DOMAIN}/v1/models/sklearn-iris:predict -d @./iris-input.json
 </code></pre></div></p>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Magic DNS</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>If you don't want to go through the trouble to get a real domain, you can instead use "magic" dns <a href="http://xip.io/">xip.io</a>.
 The key is to get the external IP for your cluster.
 <div class="highlight"><pre><span></span><code>kubectl get svc istio-ingressgateway --namespace istio-system
@@ -1919,23 +2415,27 @@ istio-ingressgateway   LoadBalancer   <span class="m">10</span>.51.253.94   <spa
 <div class="highlight"><pre><span></span><code>curl -v http://sklearn-iris.kserve-test.35.237.217.209.xip.io/v1/models/sklearn-iris:predict -d @./iris-input.json
 </code></pre></div></p>
 </div>
-<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">From Ingress gateway with HOST Header</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>If you do not have DNS, you can still curl with the ingress gateway external IP using the HOST Header.
 <div class="highlight"><pre><span></span><code><span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl get inferenceservice sklearn-iris -n kserve-test -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&quot;/&quot;</span> -f <span class="m">3</span><span class="k">)</span>
 curl -v -H <span class="s2">&quot;Host: </span><span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span><span class="s2">&quot;</span> http://<span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>:<span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span>/v1/models/sklearn-iris:predict -d @./iris-input.json
 </code></pre></div></p>
 </div>
-<input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><label for="__tabbed_3_4">From local cluster gateway</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>If you are calling from in cluster you can curl with the internal url with host {{InferenceServiceName}}.{{namespace}}
 <div class="highlight"><pre><span></span><code>curl -v http://sklearn-iris.kserve-test/v1/models/sklearn-iris:predict -d @./iris-input.json
 </code></pre></div></p>
 </div>
 </div>
-<h3 id="5-run-performance-test">5. Run Performance Test<a class="headerlink" href="#5-run-performance-test" title="Permanent link">&para;</a></h3>
+</div>
+<p>You should see two predictions returned (i.e. <code>{"predictions": [1, 1]}</code>). Both sets of data points sent for inference correspond to the flower with index <code>1</code>.
+In this case, the model predicts that both flowers are "Iris Versicolour".</p>
+<h3 id="6-run-performance-test-optional">6. Run performance test (optional)<a class="headerlink" href="#6-run-performance-test-optional" title="Permanent link">&para;</a></h3>
+<p>If you want to load test the deployed model, try deploying the following Kubernetes Job to drive load to the model:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># use kubectl create instead of apply because the job template is using generateName which doesn&#39;t work with kubectl apply</span>
-kubectl create -f https://raw.githubusercontent.com/kserve/kserve/release-0.7/docs/samples/v1beta1/sklearn/v1/perf.yaml -n kserve-test
+kubectl create -f https://raw.githubusercontent.com/kserve/kserve/release-0.8/docs/samples/v1beta1/sklearn/v1/perf.yaml -n kserve-test
 </code></pre></div>
-<p><mark><strong>Expected Outpout</strong></mark>
+<p><mark><strong>Expected Output</strong></mark>
 <div class="highlight"><pre><span></span><code>kubectl logs load-test8b58n-rgfxr -n kserve-test
 Requests      [total, rate, throughput]         30000, 500.02, 499.99
 Duration      [total, attack, wait]             1m0s, 59.998s, 3.336ms
@@ -1946,31 +2446,27 @@ Success       [ratio]                           100.00%
 Status Codes  [code:count]                      200:30000
 Error Set:
 </code></pre></div></p>
-                
-              
-              
-                
-
 
               
             </article>
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" title="Back to top" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
           </a>
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: KServe Quickstart" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -1983,7 +2479,8 @@ Error Set:
         </a>
       
       
-        <a href="../../admin/serverless/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../../admin/serverless/" class="md-footer__link md-footer__link--next" aria-label="Next: Serverless installation" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1993,7 +2490,7 @@ Error Set:
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
           </div>
         </a>
       
@@ -2001,35 +2498,36 @@ Error Set:
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            Copyright © 2021 The KServe Authors
-          </div>
-        
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2021 The KServe Authors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
-  <div class="md-footer-social">
+        <div class="md-social">
+  
     
-      
-      
-      <a href="https://github.com/kserve" target="_blank" rel="noopener" title="KServe Community on Github" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-      </a>
     
-      
-      
-      <a href="https://kubeflow.slack.com/join/shared_invite/zt-n73pfj05-l206djXlXk5qdQKs4o1Zkg#" target="_blank" rel="noopener" title="Slack" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
-      </a>
+    <a href="https://github.com/kserve" target="_blank" rel="noopener" title="KServe Community on Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
     
-  </div>
-
+    
+    <a href="https://kubeflow.slack.com/join/shared_invite/zt-n73pfj05-l206djXlXk5qdQKs4o1Zkg#" target="_blank" rel="noopener" title="Slack" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -2038,10 +2536,10 @@ Error Set:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
       
     
   </body>
