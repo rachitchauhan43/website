@@ -13,28 +13,27 @@
         <link rel="canonical" href="https://kserve.io/website/master/modelserving/v1beta1/lightgbm/">
       
       <link rel="icon" href="../../../images/favicon/favicon-32x32.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.0.5">
     
     
       
-        <title>Lightgbm - KServe Documentation Website</title>
+        <title>LightGBM - KServe Documentation Website</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.c382b1dc.min.css">
-      
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
-        
-      
-    
-    
-    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a617204b.min.css">
       
         
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9204c3b2.min.css">
+        
+      
+    
+    
+    
+      
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -76,8 +75,7 @@
           <div class="md-banner__inner md-grid md-typeset">
             
  <h1>
-
-    <a href="http://kserve-survey.com/"><b>KServe User Survey</b></a>
+   <b>KServe v0.9 is Released</b>, <a href="/website/0.9/blog/articles/2022-07-21-KServe-0.9-release/">Read blog &gt;&gt;</a>
  </h1>
 
           </div>
@@ -104,7 +102,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lightgbm
+              LightGBM
             
           </span>
         </div>
@@ -126,7 +124,7 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -134,13 +132,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
       
@@ -163,7 +161,7 @@
         <a href="https://github.com/kserve/website" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -308,7 +306,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../blog/articles/2022-02-18-KServe-0.8-release/" class="md-tabs__link">
+      <a href="../../../blog/articles/2022-07-21-KServe-0.9-release/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -372,7 +370,7 @@
       <a href="https://github.com/kserve/website" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -937,12 +935,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Lightgbm
+          LightGBM
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Lightgbm
+        LightGBM
       </a>
       
         
@@ -961,30 +959,91 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-your-own-model-and-testing-the-lightgbm-server" class="md-nav__link">
-    Creating your own model and testing the LightGBM server.
+  <a href="#train-a-lightgbm-model" class="md-nav__link">
+    Train a LightGBM model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-inferenceservice" class="md-nav__link">
-    Create the InferenceService
+  <a href="#deploy-lightgbm-model-with-v1-protocol" class="md-nav__link">
+    Deploy LightGBM model with V1 protocol
   </a>
+  
+    <nav class="md-nav" aria-label="Deploy LightGBM model with V1 protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-the-model-locally" class="md-nav__link">
+    Test the model locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-with-inferenceservice" class="md-nav__link">
+    Deploy with InferenceService
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-deployed-model" class="md-nav__link">
+    Test the deployed model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-a-prediction" class="md-nav__link">
-    Run a prediction
+  <a href="#deploy-the-model-with-v2-protocol" class="md-nav__link">
+    Deploy the model with V2 protocol
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy the model with V2 protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-the-model-locally_1" class="md-nav__link">
+    Test the model locally
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#run-lightgbm-inferenceservice-with-your-own-image" class="md-nav__link">
-    Run LightGBM InferenceService with your own image
+        
+          <li class="md-nav__item">
+  <a href="#deploy-inferenceservice-with-rest-endpoint" class="md-nav__link">
+    Deploy InferenceService with REST endpoint
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-deployed-model-with-curl" class="md-nav__link">
+    Test the deployed model with curl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-inferenceservice-with-grpc-endpoint" class="md-nav__link">
+    Create the InferenceService with gRPC endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-deployed-model-with-grpcurl" class="md-nav__link">
+    Test the deployed model with grpcurl
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1005,6 +1064,20 @@
     <li class="md-nav__item">
       <a href="../paddle/" class="md-nav__link">
         Paddle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mlflow/v2/" class="md-nav__link">
+        MLFlow
       </a>
     </li>
   
@@ -1303,12 +1376,73 @@
       
       
         <label class="md-nav__link" for="__nav_4_5">
+          Inference Graph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Inference Graph" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Inference Graph
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inference_graph/" class="md-nav__link">
+        Concept
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inference_graph/image_pipeline/" class="md-nav__link">
+        Image classification inference graph
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_6">
           Model Storage
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Model Storage" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           Model Storage
         </label>
@@ -1386,18 +1520,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_6">
+        <label class="md-nav__link" for="__nav_4_7">
           Model Explainability
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Model Explainability" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_6">
+        <label class="md-nav__title" for="__nav_4_7">
           <span class="md-nav__icon md-icon"></span>
           Model Explainability
         </label>
@@ -1426,18 +1560,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6_2" type="checkbox" id="__nav_4_6_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7_2" type="checkbox" id="__nav_4_7_2" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_6_2">
+        <label class="md-nav__link" for="__nav_4_7_2">
           Alibi Explainer
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Alibi Explainer" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_6_2">
+        <label class="md-nav__title" for="__nav_4_7_2">
           <span class="md-nav__icon md-icon"></span>
           Alibi Explainer
         </label>
@@ -1522,18 +1656,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_7">
+        <label class="md-nav__link" for="__nav_4_8">
           Model Monitoring
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Model Monitoring" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_7">
+        <label class="md-nav__title" for="__nav_4_8">
           <span class="md-nav__icon md-icon"></span>
           Model Monitoring
         </label>
@@ -1574,7 +1708,7 @@
   
     <li class="md-nav__item">
       <a href="../../detect/art/mnist/" class="md-nav__link">
-        ART Adversial Detector
+        ART Adversarial Detector
       </a>
     </li>
   
@@ -1597,18 +1731,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_8">
+        <label class="md-nav__link" for="__nav_4_9">
           Request Batching
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Request Batching" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_8">
+        <label class="md-nav__title" for="__nav_4_9">
           <span class="md-nav__icon md-icon"></span>
           Request Batching
         </label>
@@ -1644,18 +1778,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_9">
+        <label class="md-nav__link" for="__nav_4_10">
           Payload Logging
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Payload Logging" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_9">
+        <label class="md-nav__title" for="__nav_4_10">
           <span class="md-nav__icon md-icon"></span>
           Payload Logging
         </label>
@@ -1691,18 +1825,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_10" type="checkbox" id="__nav_4_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_10">
+        <label class="md-nav__link" for="__nav_4_11">
           Autoscaling
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Autoscaling" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_10">
+        <label class="md-nav__title" for="__nav_4_11">
           <span class="md-nav__icon md-icon"></span>
           Autoscaling
         </label>
@@ -1738,18 +1872,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_4_12">
           Node Scheduling
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Node Scheduling" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_4_12">
           <span class="md-nav__icon md-icon"></span>
           Node Scheduling
         </label>
@@ -1799,18 +1933,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_12">
+        <label class="md-nav__link" for="__nav_4_13">
           Kafka
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Kafka" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_12">
+        <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
           Kafka
         </label>
@@ -1823,7 +1957,7 @@
   
     <li class="md-nav__item">
       <a href="../../kafka/kafka/" class="md-nav__link">
-        Inference Kafka
+        Inference with Kafka event source
       </a>
     </li>
   
@@ -1846,18 +1980,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14" type="checkbox" id="__nav_4_14" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_13">
+        <label class="md-nav__link" for="__nav_4_14">
           Rollout Strategies
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Rollout Strategies" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_13">
+        <label class="md-nav__title" for="__nav_4_14">
           <span class="md-nav__icon md-icon"></span>
           Rollout Strategies
         </label>
@@ -2088,6 +2222,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../blog/articles/2022-07-21-KServe-0.9-release/" class="md-nav__link">
+        KServe 0.9 Release
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../blog/articles/2022-02-18-KServe-0.8-release/" class="md-nav__link">
         KServe 0.8 Release
       </a>
@@ -2259,30 +2407,91 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-your-own-model-and-testing-the-lightgbm-server" class="md-nav__link">
-    Creating your own model and testing the LightGBM server.
+  <a href="#train-a-lightgbm-model" class="md-nav__link">
+    Train a LightGBM model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-inferenceservice" class="md-nav__link">
-    Create the InferenceService
+  <a href="#deploy-lightgbm-model-with-v1-protocol" class="md-nav__link">
+    Deploy LightGBM model with V1 protocol
   </a>
+  
+    <nav class="md-nav" aria-label="Deploy LightGBM model with V1 protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-the-model-locally" class="md-nav__link">
+    Test the model locally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-with-inferenceservice" class="md-nav__link">
+    Deploy with InferenceService
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-deployed-model" class="md-nav__link">
+    Test the deployed model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-a-prediction" class="md-nav__link">
-    Run a prediction
+  <a href="#deploy-the-model-with-v2-protocol" class="md-nav__link">
+    Deploy the model with V2 protocol
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploy the model with V2 protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-the-model-locally_1" class="md-nav__link">
+    Test the model locally
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#run-lightgbm-inferenceservice-with-your-own-image" class="md-nav__link">
-    Run LightGBM InferenceService with your own image
+        
+          <li class="md-nav__item">
+  <a href="#deploy-inferenceservice-with-rest-endpoint" class="md-nav__link">
+    Deploy InferenceService with REST endpoint
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-deployed-model-with-curl" class="md-nav__link">
+    Test the deployed model with curl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-inferenceservice-with-grpc-endpoint" class="md-nav__link">
+    Create the InferenceService with gRPC endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-deployed-model-with-grpcurl" class="md-nav__link">
+    Test the deployed model with grpcurl
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2298,15 +2507,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/kserve/website/edit/mkdocs/docs/modelserving/v1beta1/lightgbm/README.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+<a href="https://github.com/kserve/website/edit/main/docs/modelserving/v1beta1/lightgbm/README.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
 
 
-
-<h1 id="deploy-lightgbm-model-with-inferenceservice">Deploy Lightgbm model with InferenceService<a class="headerlink" href="#deploy-lightgbm-model-with-inferenceservice" title="Permanent link">&para;</a></h1>
-<h2 id="creating-your-own-model-and-testing-the-lightgbm-server">Creating your own model and testing the LightGBM server.<a class="headerlink" href="#creating-your-own-model-and-testing-the-lightgbm-server" title="Permanent link">&para;</a></h2>
-<p>To test the LightGBM Server, first we need to generate a simple LightGBM model using Python. </p>
+<h1 id="deploy-lightgbm-model-with-inferenceservice">Deploy LightGBM model with InferenceService<a class="headerlink" href="#deploy-lightgbm-model-with-inferenceservice" title="Permanent link">&para;</a></h1>
+<h2 id="train-a-lightgbm-model">Train a LightGBM model<a class="headerlink" href="#train-a-lightgbm-model" title="Permanent link">&para;</a></h2>
+<p>To test the LightGBM Server, first you need to train a simple LightGBM model with following python code.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">lightgbm</span> <span class="k">as</span> <span class="nn">lgb</span>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
 <span class="kn">import</span> <span class="nn">os</span>
@@ -2317,7 +2525,7 @@
 <span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
-<span class="n">dtrain</span> <span class="o">=</span> <span class="n">lgb</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="n">dtrain</span> <span class="o">=</span> <span class="n">lgb</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;feature_names&#39;</span><span class="p">])</span>
 
 <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;objective&#39;</span><span class="p">:</span><span class="s1">&#39;multiclass&#39;</span><span class="p">,</span> 
@@ -2328,10 +2536,12 @@
 <span class="n">model_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">model_dir</span><span class="p">,</span> <span class="n">BST_FILE</span><span class="p">)</span>
 <span class="n">lgb_model</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="n">model_file</span><span class="p">)</span>
 </code></pre></div>
-<p>Then, we can install and run the <a href="https://github.com/kserve/kserve/python/lgbserver">LightGBM Server</a> using the generated model and test for prediction. Models can be on local filesystem, S3 compatible object storage, Azure Blob Storage, or Google Cloud Storage.</p>
+<h2 id="deploy-lightgbm-model-with-v1-protocol">Deploy LightGBM model with V1 protocol<a class="headerlink" href="#deploy-lightgbm-model-with-v1-protocol" title="Permanent link">&para;</a></h2>
+<h3 id="test-the-model-locally">Test the model locally<a class="headerlink" href="#test-the-model-locally" title="Permanent link">&para;</a></h3>
+<p>Install and run the <a href="https://github.com/kserve/kserve/python/lgbserver">LightGBM Server</a> using the trained model locally and test the prediction. </p>
 <div class="highlight"><pre><span></span><code>python -m lgbserver --model_dir /path/to/model_dir --model_name lgb
 </code></pre></div>
-<p>We can also do some simple predictions</p>
+<p>After the <code>LightGBM Server</code> is up locally we can then test the model by sending an inference request.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="n">request</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;sepal_width_(cm)&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">},</span> <span class="s1">&#39;petal_length_(cm)&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mf">1.4</span><span class="p">},</span> <span class="s1">&#39;petal_width_(cm)&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">},</span><span class="s1">&#39;sepal_length_(cm)&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="mf">5.1</span><span class="p">}</span> <span class="p">}</span>
@@ -2342,7 +2552,8 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="create-the-inferenceservice">Create the InferenceService<a class="headerlink" href="#create-the-inferenceservice" title="Permanent link">&para;</a></h2>
+<h3 id="deploy-with-inferenceservice">Deploy with InferenceService<a class="headerlink" href="#deploy-with-inferenceservice" title="Permanent link">&para;</a></h3>
+<p>To deploy the model on Kubernetes you can create the InferenceService by specifying the <code>modelFormat</code> with <code>lightgbm</code> and <code>storageUri</code>. </p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Old Schema</label><label for="__tabbed_1_2">New Schema</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2371,61 +2582,285 @@
 </div>
 </div>
 </div>
-<p>Apply the above yaml to create the InferenceService
+<p>Apply the above yaml to create the InferenceService</p>
 <div class="highlight"><pre><span></span><code>kubectl apply -f lightgbm.yaml
-</code></pre></div></p>
-<p><mark><strong> Expected Output </strong></mark>
-<div class="highlight"><pre><span></span><code>$ inferenceservice.serving.kserve.io/lightgbm-iris created
-</code></pre></div></p>
-<h2 id="run-a-prediction">Run a prediction<a class="headerlink" href="#run-a-prediction" title="Permanent link">&para;</a></h2>
-<p>The first step is to <a href="../../../get_started/first_isvc/#3-determine-the-ingress-ip-and-ports">determine the ingress IP and ports</a> and set <code>INGRESS_HOST</code> and <code>INGRESS_PORT</code></p>
-<div class="highlight"><pre><span></span><code>MODEL_NAME=lightgbm-iris
-INPUT_PATH=@./iris-input.json
-SERVICE_HOSTNAME=$(kubectl get inferenceservice lightgbm-iris -o jsonpath=&#39;{.status.url}&#39; | cut -d &quot;/&quot; -f 3)
-curl -v -H &quot;Host: ${SERVICE_HOSTNAME}&quot; http://${INGRESS_HOST}:${INGRESS_PORT}/v1/models/$MODEL_NAME:predict -d $INPUT_PATH
 </code></pre></div>
-<p><mark><strong> Expected Output </strong></mark>
-<div class="highlight"><pre><span></span><code>*   Trying 169.63.251.68...
-* TCP_NODELAY set
-* Connected to 169.63.251.68 (169.63.251.68) port 80 (#0)
+<p><mark><strong>Expected Output</strong></mark></p>
+<div class="highlight"><pre><span></span><code>inferenceservice.serving.kserve.io/lightgbm-iris created
+</code></pre></div>
+<h3 id="test-the-deployed-model">Test the deployed model<a class="headerlink" href="#test-the-deployed-model" title="Permanent link">&para;</a></h3>
+<p>To test the deployed model the first step is to <a href="../../../get_started/first_isvc/#4-determine-the-ingress-ip-and-ports">determine the ingress IP and ports</a> and set <code>INGRESS_HOST</code> and <code>INGRESS_PORT</code>, then run the following curl command to send the inference request to the <code>InferenceService</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">MODEL_NAME</span><span class="o">=</span>lightgbm-iris
+<span class="nv">INPUT_PATH</span><span class="o">=</span>@./iris-input.json
+<span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl get inferenceservice lightgbm-iris -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&quot;/&quot;</span> -f <span class="m">3</span><span class="k">)</span>
+curl -v -H <span class="s2">&quot;Host: </span><span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span><span class="s2">&quot;</span> http://<span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>:<span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span>/v1/models/<span class="nv">$MODEL_NAME</span>:predict -d <span class="nv">$INPUT_PATH</span>
+</code></pre></div>
+<p><mark><strong>Expected Output</strong></mark></p>
+<div class="highlight"><pre><span></span><code>*   Trying <span class="m">169</span>.63.251.68...
+* TCP_NODELAY <span class="nb">set</span>
+* Connected to <span class="m">169</span>.63.251.68 <span class="o">(</span><span class="m">169</span>.63.251.68<span class="o">)</span> port <span class="m">80</span> <span class="o">(</span><span class="c1">#0)</span>
 &gt; POST /models/lightgbm-iris:predict HTTP/1.1
 &gt; Host: lightgbm-iris.default.svc.cluster.local
 &gt; User-Agent: curl/7.60.0
 &gt; Accept: */*
-&gt; Content-Length: 76
+&gt; Content-Length: <span class="m">76</span>
 &gt; Content-Type: application/x-www-form-urlencoded
 &gt;
-* upload completely sent off: 76 out of 76 bytes
-&lt; HTTP/1.1 200 OK
-&lt; content-length: 27
-&lt; content-type: application/json; charset=UTF-8
-&lt; date: Tue, 21 May 2019 22:40:09 GMT
+* upload completely sent off: <span class="m">76</span> out of <span class="m">76</span> bytes
+&lt; HTTP/1.1 <span class="m">200</span> OK
+&lt; content-length: <span class="m">27</span>
+&lt; content-type: application/json<span class="p">;</span> <span class="nv">charset</span><span class="o">=</span>UTF-8
+&lt; date: Tue, <span class="m">21</span> May <span class="m">2019</span> <span class="m">22</span>:40:09 GMT
 &lt; server: istio-envoy
-&lt; x-envoy-upstream-service-time: 13032
+&lt; x-envoy-upstream-service-time: <span class="m">13032</span>
 &lt;
-* Connection #0 to host 169.63.251.68 left intact
-{&quot;predictions&quot;: [[0.9, 0.05, 0.05]]}
-</code></pre></div></p>
-<h2 id="run-lightgbm-inferenceservice-with-your-own-image">Run LightGBM InferenceService with your own image<a class="headerlink" href="#run-lightgbm-inferenceservice-with-your-own-image" title="Permanent link">&para;</a></h2>
-<p>Since the KServe LightGBM image is built from a specific version of <code>lightgbm</code> pip package, sometimes it might not be compatible with the pickled model
-you saved from your training environment, however you can build your own lgbserver image following <a href="https://github.com/kserve/kserve/python/lgbserver/README.md#building-your-own-ligthgbm-server-docker-image">this instruction</a>.</p>
-<p>To use your lgbserver image:
-- Add the image to the KServe <a href="https://github.com/kserve/kserve/config/configmap/inferenceservice.yaml">configmap</a>
-<div class="highlight"><pre><span></span><code><span class="w">        </span><span class="s">&quot;lightgbm&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="w"></span>
-<span class="w">            </span><span class="s">&quot;image&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;&lt;your-dockerhub-id&gt;/kserve/lgbserver&quot;</span><span class="p p-Indicator">,</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">}</span><span class="err">,</span><span class="w"></span>
+* Connection <span class="c1">#0 to host 169.63.251.68 left intact</span>
+<span class="o">{</span><span class="s2">&quot;predictions&quot;</span>: <span class="o">[[</span><span class="m">0</span>.9, <span class="m">0</span>.05, <span class="m">0</span>.05<span class="o">]]}</span>
 </code></pre></div>
-- Specify the <code>runtimeVersion</code> on <code>InferenceService</code> spec
+<h2 id="deploy-the-model-with-v2-protocol">Deploy the model with <a href="https://github.com/kserve/kserve/tree/master/docs/predict-api/v2">V2 protocol</a><a class="headerlink" href="#deploy-the-model-with-v2-protocol" title="Permanent link">&para;</a></h2>
+<h3 id="test-the-model-locally_1">Test the model locally<a class="headerlink" href="#test-the-model-locally_1" title="Permanent link">&para;</a></h3>
+<p>Once you've got your model serialised <code>model.bst</code>, we can then use <a href="https://github.com/SeldonIO/MLServer">MLServer</a> which implements the KServe V2 inference protocol to spin up a local server. For more details on MLServer, please check the <a href="https://github.com/SeldonIO/MLServer/blob/master/docs/examples/lightgbm/README.md">LightGBM example doc</a>.</p>
+<p>To run MLServer locally, you first install the <code>mlserver</code> package in your local environment, as well as the LightGBM runtime.</p>
+<div class="highlight"><pre><span></span><code>pip install mlserver mlserver-lightgbm
+</code></pre></div>
+<p>The next step is to provide the model settings so that MLServer knows:</p>
+<ul>
+<li>The inference runtime to serve your model (i.e. <code>mlserver_lightgbm.LightGBMModel</code>)</li>
+<li>The model's name and version</li>
+</ul>
+<p>These can be specified through environment variables or by creating a local
+<code>model-settings.json</code> file:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lightgbm-iris&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;v1.0.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;implementation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mlserver_lightgbm.LightGBMModel&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>With the <code>mlserver</code> package installed locally and a local <code>model-settings.json</code>
+file, you should now be ready to start our server as:</p>
+<div class="highlight"><pre><span></span><code>mlserver start .
+</code></pre></div>
+<h3 id="deploy-inferenceservice-with-rest-endpoint">Deploy InferenceService with REST endpoint<a class="headerlink" href="#deploy-inferenceservice-with-rest-endpoint" title="Permanent link">&para;</a></h3>
+<p>When you deploy your model with <code>InferenceService</code> KServe injects sensible defaults so that it runs out-of-the-box without any
+further configuration. However, you can still override these defaults by providing a <code>model-settings.json</code> file similar to your local one.
+You can even provide a <a href="https://github.com/SeldonIO/MLServer/tree/master/docs/examples/mms">set of <code>model-settings.json</code> files to load multiple models</a>.</p>
+<p>To deploy the LightGBM model with V2 inference protocol, you need to set the <strong><code>protocolVersion</code> field to <code>v2</code></strong>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Old Schema</label><label for="__tabbed_2_2">New Schema</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
 <span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
 <span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lightgbm-iris&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lightgbm-v2-iris&quot;</span><span class="w"></span>
 <span class="nt">spec</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">lightgbm</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/lightgbm/iris&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="nt">runtimeVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">X.X.X</span><span class="w"></span>
+<span class="w">      </span><span class="nt">protocolVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2</span><span class="w"></span>
+<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/lightgbm/v2/iris&quot;</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
+<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lightgbm-v2-iris&quot;</span><span class="w"></span>
+<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">modelFormat</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lightgbm</span><span class="w"></span>
+<span class="w">      </span><span class="nt">protocolVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2</span><span class="w"></span>
+<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/lightgbm/v2/iris&quot;</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Apply the InferenceService yaml to get the REST endpoint</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">kubectl</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code>kubectl apply -f lightgbm-v2.yaml
+</code></pre></div>
+<p><mark><strong>Expected Output</strong></mark></p>
+<div class="highlight"><pre><span></span><code>inferenceservice.serving.kserve.io/lightgbm-v2-iris created
+</code></pre></div>
+<h3 id="test-the-deployed-model-with-curl">Test the deployed model with curl<a class="headerlink" href="#test-the-deployed-model-with-curl" title="Permanent link">&para;</a></h3>
+<p>You can now test your deployed model by sending a sample request.</p>
+<p>Note that this request <strong>needs to follow the <a href="https://github.com/kserve/kserve/tree/master/docs/predict-api/v2">V2 Dataplane protocol</a></strong>.
+You can see an example payload below:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;inputs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;input-0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;shape&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;datatype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FP32&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="mf">6.8</span><span class="p">,</span><span class="w"> </span><span class="mf">2.8</span><span class="p">,</span><span class="w"> </span><span class="mf">4.8</span><span class="p">,</span><span class="w"> </span><span class="mf">1.4</span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="mf">6.0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.4</span><span class="p">,</span><span class="w"> </span><span class="mf">4.5</span><span class="p">,</span><span class="w"> </span><span class="mf">1.6</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Now, assuming that your ingress can be accessed at
+<code>${INGRESS_HOST}:${INGRESS_PORT}</code> or you can follow <a href="/docs/get_started/first_isvc.md#4-determine-the-ingress-ip-and-ports">this instruction</a>
+to find out your ingress IP and port.</p>
+<p>you can use <code>curl</code> to send the inference request as:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl get inferenceservice lightgbm-v2-iris -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&quot;/&quot;</span> -f <span class="m">3</span><span class="k">)</span>
+
+curl -v <span class="se">\</span>
+  -H <span class="s2">&quot;Host: </span><span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span><span class="s2">&quot;</span> <span class="se">\</span>
+  -H <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
+  -d @./iris-input-v2.json <span class="se">\</span>
+  http://<span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>:<span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span>/v2/models/lightgbm-v2-iris/infer
+</code></pre></div>
+<p><mark><strong>Expected Output</strong></mark></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;model_name&quot;</span><span class="p">:</span><span class="s2">&quot;lightgbm-v2-iris&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;model_version&quot;</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;96253e27-83cf-4262-b279-1bd4b18d7922&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;outputs&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;predict&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;shape&quot;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;datatype&quot;</span><span class="p">:</span><span class="s2">&quot;FP64&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="mf">8.796664107010673e-06</span><span class="p">,</span><span class="mf">0.9992300031041593</span><span class="p">,</span><span class="mf">0.0007612002317336916</span><span class="p">,</span><span class="mf">4.974786820804187e-06</span><span class="p">,</span><span class="mf">0.9999919650711493</span><span class="p">,</span><span class="mf">3.0601420299625077e-06</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="create-the-inferenceservice-with-grpc-endpoint">Create the InferenceService with gRPC endpoint<a class="headerlink" href="#create-the-inferenceservice-with-grpc-endpoint" title="Permanent link">&para;</a></h3>
+<p>Create the inference service yaml and expose the gRPC port, currently only one port is allowed to expose either HTTP or gRPC port and by default HTTP port is exposed.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Old Schema</label><label for="__tabbed_4_2">New Schema</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
+<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lightgbm-v2-iris&quot;</span><span class="w"></span>
+<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">lightgbm</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">protocolVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2</span><span class="w"></span>
+<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/lightgbm/v2/iris&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">h2c</span><span class="w"></span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span><span class="w"></span>
+<span class="w">        </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9000</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;serving.kserve.io/v1beta1&quot;</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;InferenceService&quot;</span><span class="w"></span>
+<span class="nt">metadata</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lightgbm-v2-iris&quot;</span><span class="w"></span>
+<span class="nt">spec</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">predictor</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">modelFormat</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lightgbm</span><span class="w"></span>
+<span class="w">      </span><span class="nt">protocolVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v2</span><span class="w"></span>
+<span class="w">      </span><span class="nt">storageUri</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gs://kfserving-examples/models/lightgbm/v2/iris&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">h2c</span><span class="w"></span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span><span class="w"></span>
+<span class="w">        </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">9000</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Apply the InferenceService yaml to get the gRPC endpoint</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">kubectl</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code>kubectl apply -f lightgbm-v2-grpc.yaml
+</code></pre></div>
+<h3 id="test-the-deployed-model-with-grpcurl">Test the deployed model with grpcurl<a class="headerlink" href="#test-the-deployed-model-with-grpcurl" title="Permanent link">&para;</a></h3>
+<p>After the gRPC <code>InferenceService</code> becomes ready, <a href="https://github.com/fullstorydev/grpcurl">grpcurl</a>, can be used to send gRPC requests to the <code>InferenceService</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># download the proto file</span>
+curl -O https://raw.githubusercontent.com/kserve/kserve/master/docs/predict-api/v2/grpc_predict_v2.proto
+
+<span class="nv">INPUT_PATH</span><span class="o">=</span>iris-input-v2-grpc.json
+<span class="nv">PROTO_FILE</span><span class="o">=</span>grpc_predict_v2.proto
+<span class="nv">SERVICE_HOSTNAME</span><span class="o">=</span><span class="k">$(</span>kubectl get inferenceservice lightgbm-v2-iris -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.status.url}&#39;</span> <span class="p">|</span> cut -d <span class="s2">&quot;/&quot;</span> -f <span class="m">3</span><span class="k">)</span>
+</code></pre></div>
+<p>The gRPC APIs follow the KServe <a href="https://github.com/kserve/kserve/tree/master/docs/predict-api/v2">prediction V2 protocol</a>.</p>
+<p>For example, <code>ServerReady</code> API can be used to check if the server is ready:</p>
+<div class="highlight"><pre><span></span><code>grpcurl <span class="se">\</span>
+  -plaintext <span class="se">\</span>
+  -proto <span class="si">${</span><span class="nv">PROTO_FILE</span><span class="si">}</span> <span class="se">\</span>
+  -authority <span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span><span class="s2">&quot; \</span>
+<span class="s2">  </span><span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span><span class="s2">:</span><span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span><span class="s2"> \</span>
+<span class="s2">  inference.GRPCInferenceService.ServerReady</span>
+</code></pre></div>
+<p>Expected Output
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;ready&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div></p>
+<p><code>ModelInfer</code> API takes input following the <code>ModelInferRequest</code> schema defined in the <code>grpc_predict_v2.proto</code> file. Notice that the input file differs from that used in the previous <code>curl</code> example.</p>
+<div class="highlight"><pre><span></span><code>grpcurl <span class="se">\</span>
+  -vv <span class="se">\</span>
+  -plaintext <span class="se">\</span>
+  -proto <span class="si">${</span><span class="nv">PROTO_FILE</span><span class="si">}</span> <span class="se">\</span>
+  -authority <span class="si">${</span><span class="nv">SERVICE_HOSTNAME</span><span class="si">}</span> <span class="se">\</span>
+  -d @ <span class="se">\</span>
+  <span class="si">${</span><span class="nv">INGRESS_HOST</span><span class="si">}</span>:<span class="si">${</span><span class="nv">INGRESS_PORT</span><span class="si">}</span> <span class="se">\</span>
+  inference.GRPCInferenceService.ModelInfer <span class="se">\</span>
+  <span class="o">&lt;&lt;&lt;</span> <span class="k">$(</span>cat <span class="s2">&quot;</span><span class="nv">$INPUT_PATH</span><span class="s2">&quot;</span><span class="k">)</span>
+</code></pre></div>
+<p><mark><strong> Expected Output </strong></mark></p>
+<div class="highlight"><pre><span></span><code>Resolved method descriptor:
+// The ModelInfer API performs inference using the specified model. Errors are
+// indicated by the google.rpc.Status returned for the request. The OK code
+// indicates success and other codes indicate failure.
+rpc ModelInfer ( .inference.ModelInferRequest ) returns ( .inference.ModelInferResponse );
+
+Request metadata to send:
+(empty)
+
+Response headers received:
+accept-encoding: identity,gzip
+content-type: application/grpc
+date: Sun, 25 Sep 2022 10:25:05 GMT
+grpc-accept-encoding: identity,deflate,gzip
+server: istio-envoy
+x-envoy-upstream-service-time: 99
+
+Estimated response size: 91 bytes
+
+Response contents:
+{
+  &quot;modelName&quot;: &quot;lightgbm-v2-iris&quot;,
+  &quot;outputs&quot;: [
+    {
+      &quot;name&quot;: &quot;predict&quot;,
+      &quot;datatype&quot;: &quot;FP64&quot;,
+      &quot;shape&quot;: [
+        &quot;2&quot;,
+        &quot;3&quot;
+      ],
+      &quot;contents&quot;: {
+        &quot;fp64Contents&quot;: [
+          8.796664107010673e-06,
+          0.9992300031041593,
+          0.0007612002317336916,
+          4.974786820804187e-06,
+          0.9999919650711493,
+          3.0601420299625077e-06
+        ]
+      }
+    }
+  ]
+}
+</code></pre></div>
 
               
             </article>
@@ -2433,7 +2868,7 @@ you saved from your training environment, however you can build your own lgbserv
         </div>
         
           <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
             Back to top
           </a>
         
@@ -2446,7 +2881,7 @@ you saved from your training environment, however you can build your own lgbserv
         
         <a href="../spark/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Spark MLlib" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -2470,7 +2905,7 @@ you saved from your training environment, however you can build your own lgbserv
             </div>
           </div>
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
           </div>
         </a>
       
@@ -2497,13 +2932,13 @@ you saved from your training environment, however you can build your own lgbserv
     
     
     <a href="https://github.com/kserve" target="_blank" rel="noopener" title="KServe Community on Github" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
     
     
     <a href="https://kubeflow.slack.com/join/shared_invite/zt-n73pfj05-l206djXlXk5qdQKs4o1Zkg#" target="_blank" rel="noopener" title="Slack" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
     </a>
   
 </div>
@@ -2516,10 +2951,10 @@ you saved from your training environment, however you can build your own lgbserv
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top"], "search": "../../../assets/javascripts/workers/search.cefbb252.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f8ea78.min.js"></script>
       
     
   </body>
