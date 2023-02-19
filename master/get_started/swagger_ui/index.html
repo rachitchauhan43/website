@@ -10,14 +10,14 @@
       
       
       
-        <link rel="canonical" href="https://kserve.io/website/master/modelserving/data_plane/">
+        <link rel="canonical" href="https://kserve.io/website/master/get_started/swagger_ui/">
       
       <link rel="icon" href="../../images/favicon/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.0.5">
     
     
       
-        <title>Model Serving Data Plane - KServe Documentation Website</title>
+        <title>Interact with InferenceService Swagger UI - KServe Documentation Website</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-plane" class="md-skip">
+        <a href="#inferenceservice-swagger-ui" class="md-skip">
           Skip to content
         </a>
       
@@ -75,7 +75,7 @@
           <div class="md-banner__inner md-grid md-typeset">
             
  <h1>
-   <b>KServe v0.9 is Released</b>, <a href="/website/0.9/blog/articles/2022-07-21-KServe-0.9-release/">Read blog &gt;&gt;</a>
+   <b>KServe v0.10 is Released</b>, <a href="/website/0.10/blog/articles/2023-02-05-KServe-0.10-release/">Read blog &gt;&gt;</a>
  </h1>
 
           </div>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Model Serving Data Plane
+              Interact with InferenceService Swagger UI
             
           </span>
         </div>
@@ -192,13 +192,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../get_started/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Getting started
       </a>
     </li>
@@ -218,11 +220,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../../admin/serverless/" class="md-tabs__link">
+      <a href="../../admin/serverless/serverless/" class="md-tabs__link">
         Administration Guide
       </a>
     </li>
+  
+
   
 
   
@@ -231,8 +240,6 @@
         
   
   
-    
-  
 
 
   
@@ -249,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../control_plane/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../modelserving/control_plane/" class="md-tabs__link">
         User Guide
       </a>
     </li>
@@ -306,7 +313,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../blog/articles/2022-07-21-KServe-0.9-release/" class="md-tabs__link">
+      <a href="../../blog/articles/2023-02-05-KServe-0.10-release/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -401,12 +408,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -429,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../get_started/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         KServe Quickstart
       </a>
     </li>
@@ -443,9 +452,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../../get_started/first_isvc/" class="md-nav__link">
+      <a href="../first_isvc/" class="md-nav__link">
         First InferenceService
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Interact with InferenceService Swagger UI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Interact with InferenceService Swagger UI
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inferenceservice-swagger-ui" class="md-nav__link">
+    InferenceService Swagger UI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-swagger-ui" class="md-nav__link">
+    Enable Swagger UI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interact-with-inferenceservice" class="md-nav__link">
+    Interact with InferenceService
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -516,10 +590,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1" type="checkbox" id="__nav_3_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_1">
+          Serverless
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Serverless" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Serverless
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../admin/serverless/" class="md-nav__link">
+      <a href="../../admin/serverless/serverless/" class="md-nav__link">
         Serverless installation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/serverless/servicemesh/" class="md-nav__link">
+        Istio Service Mesh
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/serverless/kourier_networking/" class="md-nav__link">
+        Kourier Networking Layer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -586,14 +721,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -614,14 +747,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
       
       
       
@@ -670,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../control_plane/" class="md-nav__link">
+      <a href="../../modelserving/control_plane/" class="md-nav__link">
         Model Serving Control Plane
       </a>
     </li>
@@ -689,14 +820,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" >
       
       
       
@@ -717,99 +846,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Model Serving Data Plane
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../modelserving/data_plane/data_plane/" class="md-nav__link">
         Model Serving Data Plane
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#concepts" class="md-nav__link">
-    Concepts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-plane-v1" class="md-nav__link">
-    Data Plane (V1)
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Plane (V1)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#predict" class="md-nav__link">
-    Predict
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explain" class="md-nav__link">
-    Explain
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-plane-v2" class="md-nav__link">
-    Data Plane (V2)
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Plane (V2)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#predict_1" class="md-nav__link">
-    Predict
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -821,8 +862,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../inference_api/" class="md-nav__link">
-        V2 Inference Protocol
+      <a href="../../modelserving/data_plane/v1_protocol/" class="md-nav__link">
+        V1 Inference Protocol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/data_plane/v2_protocol/" class="md-nav__link">
+        Open Inference Protocol (V2 Inference Protocol)
       </a>
     </li>
   
@@ -842,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../servingruntimes/" class="md-nav__link">
+      <a href="../../modelserving/servingruntimes/" class="md-nav__link">
         Serving Runtimes
       </a>
     </li>
@@ -872,14 +927,14 @@
       
       
         <label class="md-nav__link" for="__nav_4_2">
-          Single Model Serving
+          Model Serving Runtimes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Single Model Serving" data-md-level="2">
+      <nav class="md-nav" aria-label="Model Serving Runtimes" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
-          Single Model Serving
+          Model Serving Runtimes
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -915,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/serving_runtime/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/serving_runtime/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -929,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/tensorflow/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/tensorflow/" class="md-nav__link">
         Tensorflow
       </a>
     </li>
@@ -943,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/torchserve/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/torchserve/" class="md-nav__link">
         PyTorch
       </a>
     </li>
@@ -957,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/sklearn/v2/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/sklearn/v2/" class="md-nav__link">
         Scikit-learn
       </a>
     </li>
@@ -971,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/xgboost/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/xgboost/" class="md-nav__link">
         XGBoost
       </a>
     </li>
@@ -985,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/pmml/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/pmml/" class="md-nav__link">
         PMML
       </a>
     </li>
@@ -999,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/spark/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/spark/" class="md-nav__link">
         Spark MLlib
       </a>
     </li>
@@ -1013,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/lightgbm/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/lightgbm/" class="md-nav__link">
         LightGBM
       </a>
     </li>
@@ -1027,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/paddle/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/paddle/" class="md-nav__link">
         Paddle
       </a>
     </li>
@@ -1041,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/mlflow/v2/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/mlflow/v2/" class="md-nav__link">
         MLFlow
       </a>
     </li>
@@ -1114,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/triton/torchscript/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/triton/torchscript/" class="md-nav__link">
         Torchscript
       </a>
     </li>
@@ -1128,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/triton/bert/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/triton/bert/" class="md-nav__link">
         Tensorflow
       </a>
     </li>
@@ -1149,7 +1204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/amd/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/amd/" class="md-nav__link">
         AMD
       </a>
     </li>
@@ -1170,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/custom/custom_model/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/custom/custom_model/" class="md-nav__link">
         How to write a custom predictor
       </a>
     </li>
@@ -1243,7 +1298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mms/multi-model-serving/" class="md-nav__link">
+      <a href="../../modelserving/mms/multi-model-serving/" class="md-nav__link">
         The Scalability Problem
       </a>
     </li>
@@ -1257,7 +1312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mms/modelmesh/overview/" class="md-nav__link">
+      <a href="../../modelserving/mms/modelmesh/overview/" class="md-nav__link">
         ModelMesh Overview
       </a>
     </li>
@@ -1311,7 +1366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/transformer/feast/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/transformer/feast/" class="md-nav__link">
         Feast
       </a>
     </li>
@@ -1325,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/transformer/torchserve_image_transformer/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/transformer/torchserve_image_transformer/" class="md-nav__link">
         How to write a custom transformer
       </a>
     </li>
@@ -1372,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inference_graph/" class="md-nav__link">
+      <a href="../../modelserving/inference_graph/" class="md-nav__link">
         Concept
       </a>
     </li>
@@ -1386,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../inference_graph/image_pipeline/" class="md-nav__link">
+      <a href="../../modelserving/inference_graph/image_pipeline/" class="md-nav__link">
         Image classification inference graph
       </a>
     </li>
@@ -1433,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/azure/azure/" class="md-nav__link">
+      <a href="../../modelserving/storage/azure/azure/" class="md-nav__link">
         Azure
       </a>
     </li>
@@ -1447,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/pvc/pvc/" class="md-nav__link">
+      <a href="../../modelserving/storage/pvc/pvc/" class="md-nav__link">
         PVC
       </a>
     </li>
@@ -1461,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/s3/s3/" class="md-nav__link">
+      <a href="../../modelserving/storage/s3/s3/" class="md-nav__link">
         S3
       </a>
     </li>
@@ -1475,7 +1530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../storage/uri/uri/" class="md-nav__link">
+      <a href="../../modelserving/storage/uri/uri/" class="md-nav__link">
         URI
       </a>
     </li>
@@ -1522,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../explainer/explainer/" class="md-nav__link">
+      <a href="../../modelserving/explainer/explainer/" class="md-nav__link">
         Concept
       </a>
     </li>
@@ -1562,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../explainer/alibi/cifar10/" class="md-nav__link">
+      <a href="../../modelserving/explainer/alibi/cifar10/" class="md-nav__link">
         Image Explainer
       </a>
     </li>
@@ -1576,7 +1631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../explainer/alibi/income/" class="md-nav__link">
+      <a href="../../modelserving/explainer/alibi/income/" class="md-nav__link">
         Income Explainer
       </a>
     </li>
@@ -1590,7 +1645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../explainer/alibi/moviesentiment/" class="md-nav__link">
+      <a href="../../modelserving/explainer/alibi/moviesentiment/" class="md-nav__link">
         Text Explainer
       </a>
     </li>
@@ -1611,7 +1666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../explainer/aix/mnist/aix/" class="md-nav__link">
+      <a href="../../modelserving/explainer/aix/mnist/aix/" class="md-nav__link">
         AIX Explainer
       </a>
     </li>
@@ -1658,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detect/alibi_detect/alibi_detect/" class="md-nav__link">
+      <a href="../../modelserving/detect/alibi_detect/alibi_detect/" class="md-nav__link">
         Alibi Detector
       </a>
     </li>
@@ -1672,7 +1727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detect/aif/germancredit/" class="md-nav__link">
+      <a href="../../modelserving/detect/aif/germancredit/" class="md-nav__link">
         AIF Bias Detector
       </a>
     </li>
@@ -1686,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../detect/art/mnist/" class="md-nav__link">
+      <a href="../../modelserving/detect/art/mnist/" class="md-nav__link">
         ART Adversarial Detector
       </a>
     </li>
@@ -1733,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../batcher/batcher/" class="md-nav__link">
+      <a href="../../modelserving/batcher/batcher/" class="md-nav__link">
         Inference Batcher
       </a>
     </li>
@@ -1780,7 +1835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../logger/logger/" class="md-nav__link">
+      <a href="../../modelserving/logger/logger/" class="md-nav__link">
         Inference Logger
       </a>
     </li>
@@ -1827,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../autoscaling/autoscaling/" class="md-nav__link">
+      <a href="../../modelserving/autoscaling/autoscaling/" class="md-nav__link">
         Inference Autoscaling
       </a>
     </li>
@@ -1874,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nodescheduling/overview/" class="md-nav__link">
+      <a href="../../modelserving/nodescheduling/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1888,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nodescheduling/inferenceservicenodescheduling/" class="md-nav__link">
+      <a href="../../modelserving/nodescheduling/inferenceservicenodescheduling/" class="md-nav__link">
         InferenceService Node Scheduling
       </a>
     </li>
@@ -1935,7 +1990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka/kafka/" class="md-nav__link">
+      <a href="../../modelserving/kafka/kafka/" class="md-nav__link">
         Inference with Kafka event source
       </a>
     </li>
@@ -1982,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/rollout/canary/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/rollout/canary/" class="md-nav__link">
         Canary
       </a>
     </li>
@@ -1996,8 +2051,69 @@
   
   
     <li class="md-nav__item">
-      <a href="../v1beta1/rollout/canary-example/" class="md-nav__link">
+      <a href="../../modelserving/v1beta1/rollout/canary-example/" class="md-nav__link">
         Canary Example
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_15" type="checkbox" id="__nav_4_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_15">
+          Inference Observability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Inference Observability" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_15">
+          <span class="md-nav__icon md-icon"></span>
+          Inference Observability
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/observability/prometheus_metrics/" class="md-nav__link">
+        Prometheus Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelserving/observability/grafana_dashboards/" class="md-nav__link">
+        Grafana Dashboards
       </a>
     </li>
   
@@ -2201,6 +2317,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../blog/articles/2023-02-05-KServe-0.10-release/" class="md-nav__link">
+        KServe 0.10 Release
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../blog/articles/2022-07-21-KServe-0.9-release/" class="md-nav__link">
         KServe 0.9 Release
       </a>
@@ -2376,8 +2506,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2386,56 +2514,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#concepts" class="md-nav__link">
-    Concepts
+  <a href="#inferenceservice-swagger-ui" class="md-nav__link">
+    InferenceService Swagger UI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-plane-v1" class="md-nav__link">
-    Data Plane (V1)
+  <a href="#enable-swagger-ui" class="md-nav__link">
+    Enable Swagger UI
   </a>
-  
-    <nav class="md-nav" aria-label="Data Plane (V1)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#predict" class="md-nav__link">
-    Predict
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explain" class="md-nav__link">
-    Explain
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-plane-v2" class="md-nav__link">
-    Data Plane (V2)
+  <a href="#interact-with-inferenceservice" class="md-nav__link">
+    Interact with InferenceService
   </a>
-  
-    <nav class="md-nav" aria-label="Data Plane (V2)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#predict_1" class="md-nav__link">
-    Predict
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2451,60 +2546,48 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/kserve/website/edit/main/docs/modelserving/data_plane.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/kserve/website/edit/main/docs/get_started/swagger_ui.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="data-plane">Data Plane<a class="headerlink" href="#data-plane" title="Permanent link">&para;</a></h1>
-<p>The InferenceService Data Plane architecture consists of a static graph of components which coordinate requests for a single model. Advanced features such as Ensembling, A/B testing, and Multi-Arm-Bandits should compose InferenceServices together.</p>
-<p><img alt="Data Plane" src="../../images/dataplane.jpg" /></p>
-<h3 id="concepts">Concepts<a class="headerlink" href="#concepts" title="Permanent link">&para;</a></h3>
-<p><strong>Component</strong>: Each endpoint is composed of multiple components: "predictor", "explainer", and "transformer". The only required component is the predictor, which is the core of the system. As KServe evolves, we plan to increase the number of supported components to enable use cases like Outlier Detection.</p>
-<p><strong>Predictor</strong>: The predictor is the workhorse of the InferenceService. It is simply a model and a model server that makes it available at a network endpoint.</p>
-<p><strong>Explainer</strong>: The explainer enables an optional alternate data plane that provides model explanations in addition to predictions. Users may define their own explanation container, which configures with relevant environment variables like prediction endpoint. For common use cases, KServe provides out-of-the-box explainers like Alibi.</p>
-<p><strong>Transformer</strong>: The transformer enables users to define a pre and post processing step before the prediction and explanation workflows. Like the explainer, it is configured with relevant environment variables too. For common use cases, KServe provides out-of-the-box transformers like Feast.</p>
-<h3 id="data-plane-v1">Data Plane (V1)<a class="headerlink" href="#data-plane-v1" title="Permanent link">&para;</a></h3>
-<p>KServe has a standardized prediction workflow across all model frameworks. </p>
-<table>
-<thead>
-<tr>
-<th>API</th>
-<th>Verb</th>
-<th>Path</th>
-<th>Payload</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Readiness</td>
-<td>GET</td>
-<td>/v1/models/<model_name></td>
-<td>Response:{"name": <model_name>, "ready": true/false}</td>
-</tr>
-<tr>
-<td>Predict</td>
-<td>POST</td>
-<td>/v1/models/<model_name>:predict</td>
-<td>Request:{"instances": []}  Response:{"predictions": []}</td>
-</tr>
-<tr>
-<td>Explain</td>
-<td>POST</td>
-<td>/v1/models/<model_name>:explain</td>
-<td>Request:{"instances": []}  Response:{"predictions": [], "explainations": []}</td>
-</tr>
-</tbody>
-</table>
-<h4 id="predict">Predict<a class="headerlink" href="#predict" title="Permanent link">&para;</a></h4>
-<p>All InferenceServices speak the <a href="https://www.tensorflow.org/tfx/serving/api_rest#predict_api">Tensorflow V1 HTTP API</a>.</p>
-<p>Note: Only Tensorflow models support the fields "signature_name" and "inputs".</p>
-<h4 id="explain">Explain<a class="headerlink" href="#explain" title="Permanent link">&para;</a></h4>
-<p>All InferenceServices that are deployed with an Explainer support a standardized explanation API. This interface is identical to the Tensorflow V1 HTTP API with the addition of an ":explain" verb.</p>
-<h3 id="data-plane-v2">Data Plane (V2)<a class="headerlink" href="#data-plane-v2" title="Permanent link">&para;</a></h3>
-<p>The second version of the data-plane protocol addresses several issues found with the V1 data-plane protocol, including performance and generality across a large number of model frameworks and servers.</p>
-<h4 id="predict_1">Predict<a class="headerlink" href="#predict_1" title="Permanent link">&para;</a></h4>
-<p>The V2 protocol proposes both HTTP/REST and GRPC APIs. See the <a href="../inference_api/">complete specification</a> for more information.</p>
+  <h1>Interact with InferenceService Swagger UI</h1>
+
+<h2 id="inferenceservice-swagger-ui">InferenceService Swagger UI<a class="headerlink" href="#inferenceservice-swagger-ui" title="Permanent link">&para;</a></h2>
+<p>KServe ModelServer is built on top of <a href="https://github.com/tiangolo/fastapi">FastAPI</a>, which brings out-of-box support for <a href="https://www.openapis.org/">OpenAPI specification</a> and <a href="https://swagger.io/tools/swagger-ui/">Swagger UI</a>.</p>
+<p>Swagger UI allows visualizing and interacting with the KServe InferenceService API directly <strong>in the browser</strong>, making it easy for exploring the endpoints and validating the outputs without using any command-line tool.</p>
+<p><img alt="KServe ModelServer Swagger UI" src="../../images/swagger/kserve-swagger-ui.png" /></p>
+<h2 id="enable-swagger-ui">Enable Swagger UI<a class="headerlink" href="#enable-swagger-ui" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful when enabling this for your <strong>production</strong> InferenceService deployments
+since the endpoint does not require authentication at this time.</p>
+<p>Currently, <code>POST</code> request only work for <code>v2</code> endpoints in the UI.</p>
+</div>
+<p>To enable, simply add an extra argument to the InferenceService YAML example from <a href="../first_isvc">First Inference</a> chapter:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-n<span class="w"> </span>kserve-test<span class="w"> </span>-f<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<span class="s">apiVersion: &quot;serving.kserve.io/v1beta1&quot;</span>
+<span class="s">kind: &quot;InferenceService&quot;</span>
+<span class="s">metadata:</span>
+<span class="s">  name: &quot;sklearn-iris&quot;</span>
+<span class="s">spec:</span>
+<span class="s">  predictor:</span>
+<span class="s">    model:</span>
+<span class="hll"><span class="s">      args: [&quot;--enable_docs_url=True&quot;]</span>
+</span><span class="s">      modelFormat:</span>
+<span class="s">        name: sklearn</span>
+<span class="s">      storageUri: &quot;gs://kfserving-examples/models/sklearn/1.0/model&quot;</span>
+<span class="s">EOF</span>
+</code></pre></div>
+<p>After the InferenceService becomes ready the Swagger UI will be served at <strong><code>/docs</code></strong>. 
+In our example above, the Swagger UI will be available at <code>http://sklearn-iris.kserve-test.example.com/docs</code>.</p>
+<h2 id="interact-with-inferenceservice">Interact with InferenceService<a class="headerlink" href="#interact-with-inferenceservice" title="Permanent link">&para;</a></h2>
+<p>Click one of the V2 endpoints like <code>/v2</code>, it will expand and display the description and response from this API endpoint:</p>
+<p><img alt="V2 Metadata" src="../../images/swagger/v2-metadata.png" /></p>
+<p>Now, when you click "Try it out" and then "Execute", Swagger UI will send a <code>GET</code> request to the <code>/v2</code> endpoint. The server response body and headers will be displayed at the bottom:</p>
+<p><img alt="V2 Metadata" src="../../images/swagger/v2-metadata-try-out.png" /></p>
+<p>Similarly, we can use Swagger UI to send request to check the model metadata and make prediction using the <code>/v2/models/{model_name}/infer</code> endpoint.</p>
+<p>For more reference, please check out <a href="../modelserving/data_plane.md">Model Serving Data Plane</a> for detailed documentation on the Inference Protocol.</p>
 
               
             </article>
@@ -2523,7 +2606,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../control_plane/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Model Serving Control Plane" rel="prev">
+        <a href="../first_isvc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: First InferenceService" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2532,20 +2615,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Model Serving Control Plane
+              First InferenceService
             </div>
           </div>
         </a>
       
       
         
-        <a href="../inference_api/" class="md-footer__link md-footer__link--next" aria-label="Next: V2 Inference Protocol" rel="next">
+        <a href="../../admin/serverless/serverless/" class="md-footer__link md-footer__link--next" aria-label="Next: Serverless installation" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              V2 Inference Protocol
+              Serverless installation
             </div>
           </div>
           <div class="md-footer__button md-icon">

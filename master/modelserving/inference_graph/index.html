@@ -75,7 +75,7 @@
           <div class="md-banner__inner md-grid md-typeset">
             
  <h1>
-   <b>KServe v0.9 is Released</b>, <a href="/website/0.9/blog/articles/2022-07-21-KServe-0.9-release/">Read blog &gt;&gt;</a>
+   <b>KServe v0.10 is Released</b>, <a href="/website/0.10/blog/articles/2023-02-05-KServe-0.10-release/">Read blog &gt;&gt;</a>
  </h1>
 
           </div>
@@ -218,11 +218,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../../admin/serverless/" class="md-tabs__link">
+      <a href="../../admin/serverless/serverless/" class="md-tabs__link">
         Administration Guide
       </a>
     </li>
+  
+
   
 
   
@@ -306,7 +313,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../blog/articles/2022-07-21-KServe-0.9-release/" class="md-tabs__link">
+      <a href="../../blog/articles/2023-02-05-KServe-0.10-release/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -451,6 +458,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_started/swagger_ui/" class="md-nav__link">
+        Interact with InferenceService Swagger UI
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -516,10 +537,71 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_1" type="checkbox" id="__nav_3_1_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1_1">
+          Serverless
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Serverless" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Serverless
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../admin/serverless/" class="md-nav__link">
+      <a href="../../admin/serverless/serverless/" class="md-nav__link">
         Serverless installation
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/serverless/servicemesh/" class="md-nav__link">
+        Istio Service Mesh
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../admin/serverless/kourier_networking/" class="md-nav__link">
+        Kourier Networking Layer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -715,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data_plane/" class="md-nav__link">
+      <a href="../data_plane/data_plane/" class="md-nav__link">
         Model Serving Data Plane
       </a>
     </li>
@@ -729,8 +811,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../inference_api/" class="md-nav__link">
-        V2 Inference Protocol
+      <a href="../data_plane/v1_protocol/" class="md-nav__link">
+        V1 Inference Protocol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_plane/v2_protocol/" class="md-nav__link">
+        Open Inference Protocol (V2 Inference Protocol)
       </a>
     </li>
   
@@ -780,14 +876,14 @@
       
       
         <label class="md-nav__link" for="__nav_4_2">
-          Single Model Serving
+          Model Serving Runtimes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Single Model Serving" data-md-level="2">
+      <nav class="md-nav" aria-label="Model Serving Runtimes" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
-          Single Model Serving
+          Model Serving Runtimes
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1326,6 +1422,26 @@
   <a href="#concepts" class="md-nav__link">
     Concepts
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headers-propagation" class="md-nav__link">
+    Headers Propagation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1969,6 +2085,67 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_15" type="checkbox" id="__nav_4_15" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_15">
+          Inference Observability
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Inference Observability" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_15">
+          <span class="md-nav__icon md-icon"></span>
+          Inference Observability
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../observability/prometheus_metrics/" class="md-nav__link">
+        Prometheus Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../observability/grafana_dashboards/" class="md-nav__link">
+        Grafana Dashboards
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2152,6 +2329,20 @@
           Releases
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/articles/2023-02-05-KServe-0.10-release/" class="md-nav__link">
+        KServe 0.10 Release
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -2357,6 +2548,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headers-propagation" class="md-nav__link">
+    Headers Propagation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2406,6 +2617,27 @@ For example, a face recognition pipeline may need to first locate faces in a ima
 <p><strong>Splitter Node</strong>: Allows users to split the traffic to multiple targets using a weighted distribution.</p>
 </li>
 </ul>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<h4 id="headers-propagation">Headers Propagation<a class="headerlink" href="#headers-propagation" title="Permanent link">&para;</a></h4>
+<p>If you want Inference Graph's router to propagate the headers, you passed in the request to Inference Graph, to all the steps in your graph then you can do so using <code>inferenceservice-config</code>
+config-map in kserve namespace.
+For example:
+If you want to propagate a certain header, say "Custom-Header", then you can edit the <code>router</code> section of <code>inferenceservice-config</code>
+config-map like this :
+<div class="highlight"><pre><span></span><code>{
+    &quot;image&quot; : &quot;kserve/router:v0.10.0&quot;,
+    &quot;memoryRequest&quot;: &quot;100Mi&quot;,
+    &quot;memoryLimit&quot;: &quot;1Gi&quot;,
+    &quot;cpuRequest&quot;: &quot;100m&quot;,
+    &quot;cpuLimit&quot;: &quot;1&quot;,
+    &quot;headers&quot;: {
+      &quot;propagate&quot;:[
+        &quot;Custom-Header&quot;
+      ]
+    }
+}
+</code></pre></div>
+Once you update this config-map, kserve controller will automatically reconcile Inference Graph to start propagating headers.</p>
 
               
             </article>
